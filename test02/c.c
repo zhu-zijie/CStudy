@@ -139,3 +139,75 @@
 //	}
 //	return 0;
 //}
+
+//for循环
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	for (; i < 3; i++)
+//	{
+//		for (; j < 3; j++)	//不要随便舍弃循环条件
+//		{
+//			printf("哈哈！");
+//		}
+//	}
+//	return 0;
+//}
+
+//do while循环
+//int main()
+//{
+//	int i = 1;
+//	do
+//	{
+//		printf("%d ", i);
+//		i++;
+//	} while (i <= 10);
+//	return 0;
+//}
+
+//计算n的阶乘
+//int main()
+//{
+//	int i = 0;
+//	int n = 0;
+//	int ret = 1;
+//	scanf("%d", &n);
+//	for (i = 0; i < n; i++)
+//	{
+//		ret = ret * (i + 1);
+//	}
+//	printf("%d\n", ret);
+//
+//	return 0;
+//}
+
+//计算0!+...+10!
+//int main()
+//{
+//	int i = 0;
+//	int n = 0;
+//	int sum = 0;
+//	int ret = 1;
+//	for (n = 0; n <= 10; n++)
+//	{
+//		ret = 1;
+//		for (i = 0; i < n; i++)
+//		{
+//			ret = ret * (i + 1);
+//		}
+//		sum += ret;
+//	}
+
+	//1!+...=10!
+	//for (i = 0; i < 10; i++)
+	//{
+	//	ret *= (i + 1);
+	//	sum += ret;
+	//}
+
+//	printf("%d\n", sum);
+//	return 0;
+//}
+
