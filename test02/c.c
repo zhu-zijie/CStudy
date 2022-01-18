@@ -211,3 +211,156 @@
 //	return 0;
 //}
 
+//二分查找/折半查找
+//int main()
+//{
+//	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//	int k = 47;	//要查找的数字
+//	int left = 0;	//左下标
+//	int sz = sizeof(arr) / sizeof(arr[0]);	//数组元素的个数
+//	int right = sz - 1;	//右下标
+//	while (left <= right)
+//	{
+//		int mid = (left + right) / 2;
+//		if (arr[mid] < k)
+//		{
+//			left = mid + 1;
+//		}
+//		else if (arr[mid] > k)
+//		{
+//			right = mid - 1;
+//		}
+//		else
+//		{
+//			printf("找到了，下标为%d", mid);
+//			break;
+//		}
+//	}
+//	if (left > right)
+//	{
+//		printf("找不到！");
+//	}
+//
+//	return 0;
+//}
+
+//玩玩
+//#include <string.h>
+//#include <windows.h>
+//int main()
+//{
+//	char arr1[] = "wlecome to bit!!!!!!!!!!!";
+//	char arr2[] = "#########################";
+//	int left = 0;
+//	int right = strlen(arr1) - 1;
+//
+//	while (left <= right)
+//	{
+//		arr2[left] = arr1[left];
+//		arr2[right] = arr1[right];
+//		printf("%s\n", arr2);
+//		Sleep(1000);	//睡眠1s
+//		system("cls");	//清空屏幕
+//		left++;
+//		right--;
+//	}
+//	printf("%s\n", arr2);
+//	return 0;
+//}
+
+//#include <string.h>
+//int main()
+//{
+//	int i = 0;	//假设密码为123456
+//	char password[20] = { 0 };
+//
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf("请输入密码：>");
+//		scanf("%s", password);
+//		if (strcmp(password, "123456") == 0)
+//		{
+//			printf("密码正确！");
+//			break;
+//		}
+//		else
+//		{
+//			printf("密码错误，请再次输入！\n");
+//		}
+//	}
+//
+//	if (i == 3)
+//	{
+//		printf("三次机会使用完毕，退出登录！\n");
+//
+//		return 0;
+//	}
+//}
+
+
+//#include <time.h>
+//#include <stdlib.h>
+//void menu()
+//{
+//	//打印菜单
+//	printf("********************************************\n");
+//	printf("***********  开始游戏，选择1。  ************\n");
+//	printf("***********  退出游戏，选择0。  ************\n");
+//	printf("********************************************\n");
+//}
+//
+//void game()
+//{
+//	//猜数字
+//	int ret = rand() % 100 + 1;	//随机数1-100
+//	//printf("%d\n", ret);
+//	int guess = 0;
+//
+//	while (1)
+//	{
+//		printf("请输入你猜的数字：");
+//		scanf("%d", &guess);
+//		if (guess > ret)
+//		{
+//			printf("猜大了\n");
+//		}
+//		else if (guess < ret)
+//		{
+//			printf("猜小了\n");
+//		}
+//		else
+//		{
+//			printf("恭喜你，猜对了\n");
+//			break;
+//		}
+//	}
+//}
+//int main()
+//{
+//	int input = 0;
+//	srand((unsigned int)time(NULL));	//时间戳
+//	do
+//	{
+//		menu();
+//		printf("请选择：");
+//		scanf("%d", &input);
+//		switch (input)
+//		{
+//		case 1:
+//			//printf("玩游戏！\n");
+//			game();
+//			break;
+//		case 0:
+//			printf("退出游戏！\n");
+//			break;
+//		default:
+//			printf("请重新输入！\n");
+//			break;
+//		}
+//	} while (input);
+//
+//	return 0;
+//}
+
+
+
