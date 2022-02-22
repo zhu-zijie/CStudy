@@ -362,5 +362,125 @@
 //	return 0;
 //}
 
+//求两个数的最大公约数
+//int main()
+//{
+//	int m = 0;
+//	int n = 0;
+//	scanf("%d%d", &m, &n);
+//	int max = m > n ? n : m;
+//
+//	while (1)
+//	{
+//		if (m % max == 0 && n % max == 0)
+//		{
+//			printf("最大公约数是%d", max);
+//			break;
+//		}
+//		max--;
+//	}
+//
+//	return 0;
+//}
 
+//辗转相除法
+//int main()
+//{
+//	int m = 0;
+//	int n = 0;
+//	scanf("%d%d", &m, &n);
+//	int t = 0;
+//	while (m % n)
+//	{
+//		t = m % n;
+//		m = n;
+//		n = t;
+//	}
+//	printf("最大公约数为%d", n);
+//	return 0;
+//
+//}
 
+//打印1000-2000之间的闰年
+//int main()
+//{
+//	int year = 0;
+//	int count = 0;
+//	
+//	for (year = 1000; year <= 2000; year++)
+//	{
+//		if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+//		{
+//			printf("%d ", year);
+//			count++;
+//		}
+//	}
+//	printf("\n%d\n", count);
+//	return 0;
+//}
+
+//#include <math.h>
+////打印100-200以内的素数
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	int flag = 0;
+//
+//	for (i = 100; i <= 200; i++)
+//	{
+//		flag = 1;//假设为素数
+//		for (j = 2; j <= sqrt(i); j++)
+//		{
+//			if (i % j == 0)
+//			{
+//				flag = 0;
+//				break;
+//			}
+//		}
+//		if (flag == 1)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
+
+//#include <stdlib.h>
+//#include <string.h>
+//int main()
+//{
+//	char input[20] = { 0 };
+//	system("shutdown -s -t 180");//60s后关机
+//again:
+//	printf("你的电脑将在60s内关机，请输入我很帅取消关机！\n");
+//	scanf("%s", input);
+//	if (strcmp(input, "我很帅") == 0)
+//	{
+//		system("shutdown -a");//取消关机
+//	}
+//	else
+//	{
+//		goto again;
+//	}
+//	return 0;
+//}
+
+//#include <string.h>
+//int main()
+//{
+//	char str1[20] = { 0 };
+//	char str2[] = "i and you!";
+//	strcpy(str1, str2);
+//	printf("%s", str1);
+//	return 0;
+//}
+
+//#include <string.h>
+//int main()
+//{
+//	char str[] = "i am you!";
+//	memset(str, 'x', 5);
+//	printf("%s", str);
+//	return 0;
+//}
