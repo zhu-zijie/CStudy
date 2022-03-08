@@ -151,12 +151,10 @@
 //{
 //	int n = 0;
 //	scanf("%d", &n);
-//	int a = 0;
 //	int ret = 0;
 //	do
 //	{
-//		ret = 2 * a + 1;
-//		a = ret;
+//		ret = 2 * ret + 1;
 //		n--;
 //	} while (n >= 1);
 //	
@@ -201,3 +199,4 @@
 //	printf("%d", ret);
 //	return 0;
 //}
+
